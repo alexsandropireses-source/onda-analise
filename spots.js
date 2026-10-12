@@ -24,7 +24,7 @@ const MARE_SPOTS = [
   {uf:'BA',name:'Praia do Forte · Mata de São João',lat:-12.57,lon:-38.00},
   {uf:'BA',name:'Itacaré',lat:-14.28,lon:-38.99},
   {uf:'BA',name:'Porto Seguro',lat:-16.40,lon:-39.03},
-  {uf:'ES',name:'Vila Velha · Praia da Costa',lat:-20.33,lon:-40.28},
+  {uf:'ES',name:'Vila Velha · Coqueiral de Itaparica',lat:-20.37575,lon:-40.30986},
   {uf:'ES',name:'Guarapari · Setiba',lat:-20.64,lon:-40.43},
   {uf:'ES',name:'Vitória · Camburi',lat:-20.28,lon:-40.27},
   {uf:'ES',name:'Linhares · Regência',lat:-19.64,lon:-39.80},
@@ -46,4 +46,3 @@ const MARE_SPOTS = [
   {uf:'RS',name:'Torres · Praia Grande',lat:-29.35,lon:-49.73},
   {uf:'RS',name:'Tramandaí',lat:-30.00,lon:-50.13}
 ];
-
