@@ -9,12 +9,71 @@
     :root{--navy:#073b4c;--deep:#052d3a;--teal:#087e8b;--foam:#e9f5f3;--ink:#18343a;--muted:#61777b;--line:#d8e5e2;--coral:#f28c64;--bg:#f6faf9;--good:#e0f4eb;--mid:#fff1db;--bad:#fce7e4}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}header{background:linear-gradient(115deg,var(--deep),var(--navy) 58%,#0b7781);color:white;padding:24px max(20px,calc((100vw - 1120px)/2))}.brand{display:flex;align-items:center;gap:12px}.mark{width:43px;height:43px;border-radius:14px;background:#ffffff1c;display:grid;place-items:center;font-size:24px}.brand h1{font-size:23px;margin:0}.brand p{margin:1px 0 0;color:#c9e4e3;font-size:13px}main{max-width:1120px;margin:28px auto;padding:0 22px}.intro{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}.eyebrow{color:var(--teal);font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}.intro h2{font-size:clamp(25px,4vw,34px);line-height:1.1;margin:7px 0;color:var(--deep)}.intro p{margin:0;max-width:650px;color:var(--muted)}.tag{background:var(--foam);color:var(--teal);border-radius:999px;padding:8px 12px;white-space:nowrap;font-size:12px;font-weight:700}.tabs{display:flex;gap:7px;overflow:auto;border-bottom:1px solid var(--line);padding:4px 0 11px}.tab{border:0;border-radius:999px;padding:10px 15px;background:transparent;color:#557075;font:inherit;font-weight:700;white-space:nowrap;cursor:pointer}.tab:hover{background:var(--foam)}.tab[aria-selected=true]{background:var(--navy);color:white}.tab small{font-size:10px;color:#8ba2a4}.tab[aria-selected=true] small{color:#c2e2df}.panel{padding-top:20px}.panel[hidden]{display:none}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 32px #0a3c4b09}.head{display:flex;justify-content:space-between;gap:14px;align-items:start;margin-bottom:18px}.head h3{margin:0;color:var(--deep);font-size:20px}.head p{margin:4px 0 0;color:var(--muted);font-size:13px}.badge{white-space:nowrap;border-radius:999px;padding:6px 10px;background:#e9f5f3;color:#17616b;font-size:11px;font-weight:750}.selectors{display:grid;grid-template-columns:1fr 1.4fr 1fr auto;gap:10px;align-items:end}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:5px}.field select,.field input{height:43px;width:100%;border:1px solid #c9dad7;border-radius:10px;padding:0 11px;background:white;color:var(--ink);font:inherit}.btn{height:43px;padding:0 16px;border:0;border-radius:10px;background:var(--coral);color:#263438;font:inherit;font-weight:800;cursor:pointer}.btn:hover{filter:brightness(.96)}.btn:disabled{opacity:.6;cursor:wait}.status{min-height:24px;margin:12px 0 4px;color:var(--muted);font-size:13px}.status.error{color:#9c3025}.status.success{color:#176d45}.summary{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;margin-top:10px}.summary-box{border-radius:13px;background:var(--foam);padding:15px}.summary-box h4{margin:0 0 5px;color:var(--deep);font-size:12px;text-transform:uppercase;letter-spacing:.6px}.summary-box p{margin:0;color:#31565a;font-size:14px}.days{display:grid;grid-template-columns:1fr;gap:12px;margin-top:15px}.day{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white}.day-title{padding:11px 13px;background:#f0f7f6;color:var(--deep);font-weight:800;font-size:13px;display:flex;justify-content:space-between}.day-title span{font-weight:500;color:var(--muted);font-size:11px}.hours{width:100%;table-layout:fixed;border-collapse:collapse;font-size:12px}.hours th,.hours td{padding:9px 8px;border-top:1px solid #edf2f1;text-align:left;vertical-align:top}.hours th{color:var(--muted);font-size:10px;font-weight:700}.hours tr.best{background:var(--good)}.hour{font-weight:800;color:var(--deep);white-space:nowrap}.cellmain{font-weight:750}.cellsub{display:block;color:var(--muted);font-size:10px}.wind{white-space:normal}.note{margin:14px 0 0;font-size:11px;color:var(--muted)}.source{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.chip{border:1px solid var(--line);border-radius:999px;padding:5px 9px;background:#fff;color:#4c696d;font-size:11px}.soon{text-align:center;padding:50px 18px}.soon .emoji{font-size:36px}.soon h3{color:var(--deep);margin:9px 0 5px}.soon p{color:var(--muted);max-width:480px;margin:auto}.footer{margin:18px 2px 36px;color:var(--muted);font-size:11px}.attribution a{color:var(--teal)}.spinner{display:inline-block;width:12px;height:12px;border:2px solid #bdd4d2;border-top-color:var(--teal);border-radius:50%;animation:spin .8s linear infinite;vertical-align:-2px;margin-right:5px}@keyframes spin{to{transform:rotate(360deg)}}
     @media(max-width:850px){.selectors{grid-template-columns:1fr 1fr}.days{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.hours{min-width:0;table-layout:auto}.hours thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.hours,.hours tbody,.hours tr{display:block;width:100%}.hours tr{padding:7px 10px;border-top:1px solid #edf2f1}.hours td{display:grid;grid-template-columns:minmax(105px,34%) 1fr;gap:8px;padding:5px 0;border:0;white-space:normal}.hours td::before{content:attr(data-label);font-weight:700;color:var(--muted)}.hours tr.best{border-left:3px solid #43a878}.day-title{gap:8px;flex-wrap:wrap}}
     @media(max-width:590px){main{padding:0 14px;margin:21px auto}.intro{display:block}.tag{display:inline-block;margin-top:12px}.card{padding:16px}.selectors,.summary,.days{grid-template-columns:1fr}.head{display:block}.badge{display:inline-block;margin-top:10px}.hours th,.hours td{padding:8px 6px}}
-  </style>
+  
+    /* BlueZone: identidade oceânica e painel de previsão */
+    :root{--navy:#06324a;--deep:#06263b;--teal:#087f98;--foam:#eaf6f8;--ink:#163747;--muted:#607984;--line:#d7e6ea;--coral:#ffb66e;--bg:#f1f7f9;--good:#e2f5ed;--mid:#fff1db;--bad:#fce7e4}
+    body{background:radial-gradient(ellipse at 88% 8%,#dceff3 0,transparent 28%),var(--bg);color:var(--ink)}
+    header{position:relative;isolation:isolate;overflow:hidden;min-height:126px;padding:25px max(22px,calc((100vw - 1120px)/2));background:linear-gradient(112deg,#041f36 0%,#06435e 58%,#087e91 100%)}
+    header::before{content:"";position:absolute;z-index:-1;right:-8vw;top:-172px;width:48vw;min-width:390px;height:390px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 22px #ffffff08,0 0 0 48px #ffffff07,0 0 0 78px #ffffff05}
+    .brand{position:relative;z-index:1;gap:15px}
+    .mark{width:54px;height:54px;border:1px solid #ffffff2b;border-radius:17px;background:#ffffff14;box-shadow:inset 0 1px 0 #ffffff28;color:#a5f2ee}
+    .mark svg{display:block;width:34px;height:34px}
+    .brand h1{font-size:26px;letter-spacing:-.5px}
+    .brand p{margin-top:3px;color:#c1e4e8;font-size:13px;letter-spacing:.1px}
+    main{max-width:1120px;margin:30px auto;padding:0 22px}
+    .intro{position:relative;isolation:isolate;overflow:hidden;min-height:205px;align-items:center;padding:34px 36px;border:1px solid #0a698055;border-radius:25px;background:linear-gradient(110deg,#06283d 0%,#07506c 57%,#07859a 100%);box-shadow:0 18px 42px #052d3a20;color:#fff}
+    .intro::after{content:"〰";position:absolute;z-index:-1;right:0;bottom:-101px;color:#ffffff13;font-size:260px;font-weight:300;line-height:1;transform:rotate(-8deg);pointer-events:none}
+    .intro>div{position:relative;z-index:1}
+    .eyebrow{color:#a2e6e8;font-size:10px;letter-spacing:1.8px}
+    .intro h2{max-width:670px;margin:10px 0 9px;color:#fff;font-size:clamp(30px,4.4vw,43px);letter-spacing:-1.1px;line-height:1.06}
+    .intro p{max-width:620px;color:#d2e9ed;font-size:15px;line-height:1.65}
+    .tag{position:relative;z-index:1;align-self:center;border:1px solid #ffffff35;background:#ffffff16;color:#f2ffff;padding:10px 14px;box-shadow:inset 0 1px 0 #ffffff20}
+    .tabs{width:fit-content;max-width:100%;margin-top:22px;padding:6px;border:1px solid #e0eaed;border-bottom:1px solid #e0eaed;border-radius:16px;background:#fff;box-shadow:0 5px 18px #1637470a}
+    .tab{border-radius:11px;padding:10px 16px;color:#5c747e}
+    .tab:hover{background:#edf7f8}
+    .tab[aria-selected=true]{background:linear-gradient(135deg,#08738b,#0d9baa);color:#fff;box-shadow:0 4px 10px #087f9833}
+    .panel{padding-top:16px}
+    .card{border:1px solid #dce8eb;border-radius:22px;padding:24px;background:linear-gradient(180deg,#fff,#fcfefe);box-shadow:0 14px 36px #123a4a0c}
+    .head{align-items:center;margin-bottom:20px}
+    .head h3{font-size:21px;letter-spacing:-.25px}
+    .head p{font-size:13px}
+    .badge{border:1px solid #cfe7e9;background:#edf8f8;color:#087185;padding:7px 11px}
+    .field label{color:#3e5d69;font-size:11px;letter-spacing:.35px;text-transform:uppercase}
+    .field select,.field input{height:46px;border:1px solid #cfdee3;border-radius:12px;background:#fff;box-shadow:0 2px 4px #173c4a08}
+    .field select:focus,.field input:focus{outline:3px solid #0b9caf24;border-color:#0b94a5}
+    .btn{height:46px;border-radius:12px;background:linear-gradient(135deg,#f6a95f,#ffca7d);box-shadow:0 5px 12px #d9863630;color:#263b44;transition:transform .15s ease,box-shadow .15s ease}
+    .btn:hover{filter:none;transform:translateY(-1px);box-shadow:0 8px 16px #d9863638}
+    .summary{gap:14px;margin-top:14px}
+    .summary-box{min-height:91px;border:1px solid #dcecef;border-radius:16px;background:linear-gradient(135deg,#edf8f9,#f7fbfc);padding:17px 18px}
+    .summary-box:first-child{border-color:#0c688044;background:linear-gradient(115deg,#07334d,#08768b);box-shadow:0 8px 18px #073b4c1b}
+    .summary-box:first-child h4{color:#9de5e6}
+    .summary-box:first-child p{color:#f3ffff}
+    .summary-box h4{font-size:10px;letter-spacing:1px}
+    .summary-box p{line-height:1.6}
+    .days{gap:14px;margin-top:18px}
+    .day{border:1px solid #dce8eb;border-radius:17px;box-shadow:0 5px 16px #16374708}
+    .day-title{align-items:center;padding:13px 16px;border-bottom:1px solid #dfedef;background:linear-gradient(90deg,#e9f5f7,#f5fafb);color:#123d51}
+    .day-title strong{text-transform:capitalize}
+    .day-title span{border:1px solid #d8e9ec;border-radius:999px;background:#fff;padding:4px 9px}
+    .hours th{background:#fbfdfe;color:#607984;text-transform:uppercase;letter-spacing:.45px}
+    .hours td{padding-top:11px;padding-bottom:11px}
+    .hours tr.best{background:linear-gradient(90deg,#e5f6ed,#f4fbf7)}
+    .hour{color:#087388}
+    .cellmain{color:#183d4d}
+    .cellsub{margin-top:2px;color:#627b84;font-size:10px;line-height:1.45}
+    .note{padding:12px 14px;border-left:3px solid #8acbd0;border-radius:0 10px 10px 0;background:#f3f9fa;color:#58717b;line-height:1.65}
+    .chip{border-color:#d9e8eb;background:#f9fcfd;color:#506b75;padding:6px 10px}
+    .soon{border-radius:22px}
+    .footer{padding-top:4px}
+    @media(max-width:700px){header{min-height:108px;padding-top:21px;padding-bottom:21px}.intro{min-height:0;padding:27px 23px;border-radius:21px}.intro::after{right:-40px;bottom:-70px;font-size:190px}.tag{white-space:normal}.tabs{width:100%}.tab{flex:1;padding:10px 12px}.card{padding:18px}.summary{gap:9px}.summary-box{min-height:0;padding:14px}.day-title{padding:11px 13px}}
+    @media(max-width:590px){main{margin:20px auto;padding:0 14px}.intro h2{font-size:31px;letter-spacing:-.6px}.intro p{font-size:14px}.head h3{font-size:19px}.selectors{gap:12px}.btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
 </head>
 <body>
-  <header><div class="brand"><div class="mark" aria-hidden="true">〰</div><div><h1>BlueZone</h1><p>Condições do mar para quem vive a água</p></div></div></header>
+  <header><div class="brand"><div class="mark" aria-hidden="true"><svg viewBox="0 0 40 40" focusable="false"><path d="M5 15c4 0 4-5 8-5s4 5 8 5 4-5 8-5 4 5 8 5M5 25c4 0 4-5 8-5s4 5 8 5 4-5 8-5 4 5 8 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"/></svg></div><div><h1>BlueZone</h1><p>Previsão de ondas, vento e maré para quem vive o oceano</p></div></div></header>
   <main>
-    <section class="intro"><div><div class="eyebrow">Brasil · esportes aquáticos</div><h2>Encontre sua próxima sessão</h2><p>Veja ondas e vento por região. Altura, período e direção vêm acompanhados de explicações simples para ajudar a comparar os horários.</p></div><span class="tag">🌊 Previsões atualizadas automaticamente</span></section>
+    <section class="intro"><div><div class="eyebrow">BRASIL · PREVISÃO MARINHA</div><h2>Leia o mar. Escolha sua melhor janela.</h2><p>Compare altura, período, direção da ondulação e vento em uma leitura clara, do amanhecer ao fim do dia.</p></div><span class="tag">🌊 Previsões atualizadas automaticamente</span></section>
     <nav class="tabs" role="tablist" aria-label="Navegação principal">
       <button class="tab" role="tab" id="tab-forecast" aria-selected="true">Previsão de ondulação</button>
       <button class="tab" role="tab" id="tab-sports" aria-selected="false">Esportes</button>
