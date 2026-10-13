@@ -14,6 +14,7 @@ const MARE_SPOTS = [
   {uf:'RN',name:'São Miguel do Gostoso',lat:-5.12,lon:-35.64},
   {uf:'PB',name:'João Pessoa · Cabo Branco',lat:-7.12,lon:-34.81},
   {uf:'PB',name:'Cabedelo',lat:-6.98,lon:-34.83},
+  {uf:'PI',name:'Luís Correia · Praia do Coqueiro',lat:-2.88145,lon:-41.63909},
   {uf:'PE',name:'Recife · Boa Viagem',lat:-8.13,lon:-34.90},
   {uf:'PE',name:'Porto de Galinhas · Ipojuca',lat:-8.50,lon:-35.00},
   {uf:'PE',name:'Fernando de Noronha',lat:-3.85,lon:-32.42},
