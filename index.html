@@ -68,6 +68,16 @@
     @media(max-width:700px){header{min-height:108px;padding-top:21px;padding-bottom:21px}.intro{min-height:0;padding:27px 23px;border-radius:21px}.intro::after{right:-40px;bottom:-70px;font-size:190px}.tag{white-space:normal}.tabs{width:100%}.tab{flex:1;padding:10px 12px}.card{padding:18px}.summary{gap:9px}.summary-box{min-height:0;padding:14px}.day-title{padding:11px 13px}}
     @media(max-width:590px){main{margin:20px auto;padding:0 14px}.intro h2{font-size:31px;letter-spacing:-.6px}.intro p{font-size:14px}.head h3{font-size:19px}.selectors{gap:12px}.btn{width:100%}}
     @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+    /* Fundo submarino com camadas de contraste para preservar a leitura */
+    body{background-color:#062b40;background-image:linear-gradient(180deg,rgba(3,28,45,.56),rgba(4,37,53,.64) 48%,rgba(6,43,61,.70)),url("https://images.unsplash.com/photo-1689428146297-691ca4dcb7f5?auto=format&fit=crop&w=2200&q=85");background-position:center,center 38%;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
+    header{background-image:linear-gradient(112deg,rgba(4,31,54,.72),rgba(8,95,120,.52)),url("https://images.unsplash.com/photo-1689428146297-691ca4dcb7f5?auto=format&fit=crop&w=2200&q=85");background-position:center,center 34%;background-size:cover}
+    .card{background:rgba(255,255,255,.95);backdrop-filter:blur(9px)}
+    .day{background:rgba(255,255,255,.94);backdrop-filter:blur(7px)}
+    .day-title{background:linear-gradient(90deg,rgba(233,245,247,.96),rgba(245,250,251,.90))}
+    .hours th{background:rgba(251,253,254,.92)}
+    .note{background:rgba(243,249,250,.93)}
+    @media(max-width:700px){body{background-attachment:scroll;background-position:center,center top}}
 </style>
 </head>
 <body>
@@ -105,7 +115,7 @@
         <div class="summary-box" id="sport-info"><h4>Surf</h4><p>A previsão de ondas está disponível no botão “Previsão de ondulação”.</p></div>
       </div>
     </section>
-    <p class="footer attribution">Dados de previsão fornecidos por <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, com modelos NOAA/NCEP. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Termos e atribuição</a>. Previsões não substituem observação local.</p>
+    <p class="footer attribution">Imagem de fundo: <a href="https://unsplash.com/photos/an-underwater-view-of-a-coral-reef-with-blue-water-VzkmHNO4z3Y" target="_blank" rel="noopener">Francesco Ungaro / Unsplash</a>. Dados de previsão fornecidos por <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, com modelos NOAA/NCEP. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Termos e atribuição</a>. Previsões não substituem observação local.</p>
   </main>
   <script src="spots.js"></script>
   <script>
