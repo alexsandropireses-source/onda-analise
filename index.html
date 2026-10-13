@@ -125,7 +125,7 @@
   (()=>{
     const $=s=>document.querySelector(s), state=$('#state'), spot=$('#spot'), form=$('#searchForm'), status=$('#status'), forecast=$('#forecast'), daysBox=$('#days'), btn=$('#loadBtn');
     const names={AC:'Acre',AL:'Alagoas',AP:'Amapá',AM:'Amazonas',BA:'Bahia',CE:'Ceará',DF:'Distrito Federal',ES:'Espírito Santo',GO:'Goiás',MA:'Maranhão',MT:'Mato Grosso',MS:'Mato Grosso do Sul',MG:'Minas Gerais',PA:'Pará',PB:'Paraíba',PR:'Paraná',PE:'Pernambuco',PI:'Piauí',RJ:'Rio de Janeiro',RN:'Rio Grande do Norte',RS:'Rio Grande do Sul',RO:'Rondônia',RR:'Roraima',SC:'Santa Catarina',SP:'São Paulo',SE:'Sergipe',TO:'Tocantins'};
-    Object.entries(names).sort((a,b)=>a[1].localeCompare(b[1],'pt-BR')).forEach(([uf,n])=>{const o=document.createElement('option');o.value=uf;o.textContent=n;state.append(o)});
+    const statesWithSpots=new Set(MARE_SPOTS.map(s=>s.uf));Object.entries(names).filter(([uf])=>statesWithSpots.has(uf)).sort((a,b)=>a[1].localeCompare(b[1],'pt-BR')).forEach(([uf,n])=>{const o=document.createElement('option');o.value=uf;o.textContent=n;state.append(o)});
     function populateSpots(){spot.replaceChildren();const list=MARE_SPOTS.filter(s=>s.uf===state.value);const first=document.createElement('option');first.value='';first.textContent=list.length?'Escolha uma praia/região':'Ainda não há picos cadastrados neste estado';spot.append(first);list.forEach((s,i)=>{const o=document.createElement('option');o.value=String(MARE_SPOTS.indexOf(s));o.textContent=s.name;spot.append(o)});spot.disabled=!list.length;}
     state.addEventListener('change',populateSpots);
     const dirs=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSO','SO','OSO','O','ONO','NO','NNO'];
